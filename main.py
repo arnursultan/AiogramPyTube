@@ -10,18 +10,6 @@ import logging
 
 load_dotenv('bot.py')
 
-from aiogram import Bot, Dispatcher, types, executor
-from aiogram.dispatcher.filters.state import StatesGroup, State
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.dispatcher import FSMContext
-from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
-from pytube import YouTube
-from dotenv import load_dotenv
-import os
-import logging
-
-load_dotenv('.env')
-
 buttons = [
     KeyboardButton('/start'),
     KeyboardButton('/help'),
